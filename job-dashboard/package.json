@@ -1,0 +1,14 @@
+{
+  "name": "job-agent-dashboard",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "playwright": "^1.64.1"
+  }
+}

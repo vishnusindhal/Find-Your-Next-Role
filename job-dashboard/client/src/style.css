@@ -1,0 +1,57 @@
+:root { color: #172033; background: #f5f7fb; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+.app-shell { max-width: 1180px; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+.app-header { align-items: end; display: flex; justify-content: space-between; gap: 2rem; margin: 2rem 0 2.5rem; }
+.eyebrow { color: #4968c8; font-size: .75rem; font-weight: 800; letter-spacing: .12em; margin: 0; }
+h1 { font-size: clamp(2.4rem, 6vw, 4.5rem); line-height: .95; margin: 1rem 0 0; }
+h2 { margin: 0; }
+h3 { margin-top: 2rem; }
+.header-note, .muted, .company { color: #536078; }
+.header-note { max-width: 260px; line-height: 1.5; text-align: right; }
+.filter-panel { background: white; border: 1px solid #dfe5f1; border-radius: 14px; display: grid; gap: 1rem; grid-template-columns: 2fr 1fr 1.5fr 1.5fr; padding: 1rem; }
+label { color: #536078; display: grid; font-size: .85rem; font-weight: 700; gap: .4rem; }
+input, select { background: #fff; border: 1px solid #cbd4e4; border-radius: 8px; color: #172033; min-width: 0; padding: .65rem .7rem; }
+.job-section { margin-top: 2.5rem; }
+.section-heading { align-items: baseline; display: flex; gap: .75rem; margin-bottom: 1rem; }
+.section-heading span { color: #718096; font-size: .85rem; }
+.job-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+.job-card { background: white; border: 1px solid #dfe5f1; border-radius: 14px; padding: 1.1rem; box-shadow: 0 8px 30px #21315b0b; }
+.job-card-top, .card-actions, .detail-actions, .badges, .evidence-row { align-items: center; display: flex; gap: .6rem; }
+.job-card-top { align-items: start; justify-content: space-between; }
+.company { font-size: .85rem; margin: 0 0 .35rem; }
+.title-button { background: none; border: 0; color: #172033; font-size: 1.1rem; font-weight: 800; padding: 0; text-align: left; }
+.title-button:hover { color: #4968c8; }
+.badge { background: #edf1f8; border-radius: 999px; color: #536078; display: inline-block; font-size: .72rem; font-weight: 800; padding: .28rem .55rem; text-transform: uppercase; }
+.score { background: #e7efff; color: #3156b8; white-space: nowrap; }
+.eligibility-eligible { background: #dcfce7; color: #18794e; }
+.eligibility-unclear { background: #fff4cc; color: #8a5a00; }
+.eligibility-ineligible { background: #fee4e2; color: #b42318; }
+.new { background: #e4f7ed; color: #18794e; }
+.updated { background: #f2e8ff; color: #6941c6; }
+.badges { flex-wrap: wrap; margin: .85rem 0; }
+.muted { font-size: .85rem; }
+.summary { color: #536078; line-height: 1.45; min-height: 2.5rem; }
+.evidence-row { align-items: stretch; margin: 1rem 0; }
+.evidence { background: #f7f9fc; border-radius: 8px; display: grid; flex: 1; gap: .25rem; padding: .65rem; }
+.evidence strong { font-size: .8rem; }
+.evidence span { color: #667085; font-size: .72rem; line-height: 1.35; }
+.card-actions { justify-content: space-between; margin-top: 1rem; }
+a { color: #3156b8; font-weight: 700; }
+.card-actions select { max-width: 125px; padding: .4rem; }
+.error-message { background: #fee4e2; border-radius: 8px; color: #b42318; margin-top: 1rem; padding: .8rem; }
+.empty { color: #536078; padding: 3rem 0; text-align: center; }
+.pagination { align-items: center; display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; }
+.pagination button, .back-button { background: white; border: 1px solid #cbd4e4; border-radius: 8px; padding: .6rem .9rem; }
+.pagination button:disabled { cursor: not-allowed; opacity: .5; }
+.back-button { margin-bottom: 1.5rem; }
+.detail-header { background: white; border: 1px solid #dfe5f1; border-radius: 14px; padding: 1.5rem; }
+.detail-header h2 { font-size: clamp(1.7rem, 4vw, 2.8rem); margin: .35rem 0 1rem; }
+.detail-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); margin-top: 1rem; }
+.detail-grid .evidence { min-height: 70px; }
+.detail-actions { justify-content: space-between; margin-top: 2rem; }
+.primary-link { background: #3156b8; border-radius: 8px; color: white; padding: .7rem 1rem; text-decoration: none; }
+.description { white-space: pre-wrap; line-height: 1.6; }
+@media (max-width: 720px) { .app-header { align-items: start; flex-direction: column; } .header-note { text-align: left; } .filter-panel, .detail-grid { grid-template-columns: 1fr; } .evidence-row { align-items: stretch; flex-direction: column; } .detail-actions { align-items: start; flex-direction: column; } }

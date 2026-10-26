@@ -1,0 +1,22 @@
+[
+  {"company":"Google","url":"https://careers.google.com/","source":"attached_shortlist"},
+  {"company":"Amazon","url":"https://www.amazon.jobs/en/","source":"attached_shortlist"},
+  {"company":"Walmart Global Tech","url":"https://careers.walmart.com/","source":"attached_shortlist"},
+  {"company":"Juspay","url":"https://www.juspay.in/careers","source":"attached_shortlist"},
+  {"company":"CRED","url":"https://careers.cred.club/","source":"attached_shortlist"},
+  {"company":"Meesho","url":"https://careers.meesho.com/","source":"attached_shortlist"},
+  {"company":"Chargebee","url":"https://careers.chargebee.com/jobs/","source":"attached_shortlist"},
+  {"company":"Atlan","url":"https://atlan.com/careers/","source":"attached_shortlist"},
+  {"company":"Groww","url":"https://groww.skillate.com/","source":"attached_shortlist"},
+  {"company":"Slice","url":"https://www.slice.is/work-at-slice/","source":"attached_shortlist"},
+  {"company":"Yellow.ai","url":"https://yellow.ai/career","source":"attached_shortlist"},
+  {"company":"Upstox","url":"https://jobs.lever.co/upstox","source":"attached_shortlist"},
+  {"company":"PayU","url":"https://payu.in/careers","source":"attached_shortlist"},
+  {"company":"MobiKwik","url":"https://www.mobikwik.com/career","source":"attached_shortlist"},
+  {"company":"PayPal","url":"https://www.paypal.com/us/webapps/mpp/jobs/students-and-grads/internships","source":"attached_shortlist"},
+  {"company":"Zeta","url":"https://careers.zeta.tech/work-with-us/","source":"attached_shortlist"},
+  {"company":"Goldman Sachs","url":"https://www.goldmansachs.com/careers/","source":"previous_priority"},
+  {"company":"Razorpay","url":"https://razorpay.com/jobs/","source":"previous_priority"},
+  {"company":"Microsoft","url":"https://careers.microsoft.com/","source":"previous_priority"},
+  {"company":"Flipkart","url":"https://www.flipkartcareers.com/","source":"previous_priority"}
+]

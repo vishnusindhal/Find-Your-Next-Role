@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-10-26T06:24:56.442Z",
+  "jobs": 6,
+  "companies": [
+    {
+      "company": "Google",
+      "url": "https://careers.google.com/",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Amazon",
+      "url": "https://www.amazon.jobs/en/",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Walmart Global Tech",
+      "url": "https://careers.walmart.com/",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Juspay",
+      "url": "https://www.juspay.in/careers",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "CRED",
+      "url": "https://careers.cred.club/",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Meesho",
+      "url": "https://careers.meesho.com/",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Chargebee",
+      "url": "https://careers.chargebee.com/jobs/",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Atlan",
+      "url": "https://atlan.com/careers/",
+      "source": "attached_shortlist",
+      "status": "jobs_found",
+      "jobs": 6,
+      "reason": ""
+    },
+    {
+      "company": "Groww",
+      "url": "https://groww.skillate.com/",
+      "source": "attached_shortlist",
+      "status": "failed",
+      "jobs": 0,
+      "reason": "page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://groww.skillate.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "company": "Slice",
+      "url": "https://www.slice.is/work-at-slice/",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Yellow.ai",
+      "url": "https://yellow.ai/career",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Upstox",
+      "url": "https://jobs.lever.co/upstox",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "MobiKwik",
+      "url": "https://www.mobikwik.com/career",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "PayPal",
+      "url": "https://www.paypal.com/us/webapps/mpp/jobs/students-and-grads/internships",
+      "source": "attached_shortlist",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Zeta",
+      "url": "https://careers.zeta.tech/work-with-us/",
+      "source": "attached_shortlist",
+      "status": "failed",
+      "jobs": 0,
+      "reason": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://careers.zeta.tech/work-with-us/\nCall log:\n\u001b[2m  - navigating to \"https://careers.zeta.tech/work-with-us/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "company": "Goldman Sachs",
+      "url": "https://www.goldmansachs.com/careers/",
+      "source": "previous_priority",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Razorpay",
+      "url": "https://razorpay.com/jobs/",
+      "source": "previous_priority",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Microsoft",
+      "url": "https://careers.microsoft.com/",
+      "source": "previous_priority",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    },
+    {
+      "company": "Flipkart",
+      "url": "https://www.flipkartcareers.com/",
+      "source": "previous_priority",
+      "status": "manual_review",
+      "jobs": 0,
+      "reason": "No reliable JobPosting data or approved job links found."
+    }
+  ]
+}

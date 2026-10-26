@@ -1,0 +1,13 @@
+node_modules/
+**/node_modules/
+.env
+**/.env
+dist/
+**/dist/
+coverage/
+*.log
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.playwright/
+playwright-report/
