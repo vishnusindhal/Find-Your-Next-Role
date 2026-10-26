@@ -42,34 +42,52 @@ npm install --prefix client
 
 Edit `server\.env` if MongoDB is not local.
 
-## Seed sample data
+## Import real data and run the dashboard
+
+The normal workflow imports the real scan output. Run the importer after the Python or
+JavaScript scans have produced data:
 
 ```powershell
+cd "C:\Users\vishn\OneDrive\Desktop\job agent\job-dashboard\server"
+npm run import:real
+```
+
+The importer removes existing dashboard collections before loading the real records. It
+imports PayU, Atlan, and The Job Company records, including valid employer application
+URLs and company LinkedIn links. The Job Company records remain labeled as third-party
+listings.
+
+Start the API and React client in two terminals, or use the combined command:
+
+```powershell
+cd "C:\Users\vishn\OneDrive\Desktop\job agent\job-dashboard"
+npm run dev
+```
+
+Open the dashboard at <http://localhost:5173>.
+
+Verify the API:
+
+```powershell
+Invoke-RestMethod "http://127.0.0.1:4000/api/health"
+Invoke-RestMethod "http://127.0.0.1:4000/api/jobs?pageSize=12"
+```
+
+The dashboard provides employer application links when a reliable URL was resolved,
+the original listing source, and a company LinkedIn link for manual referral research.
+It does not search for employees, send messages, request referrals, or submit applications.
+
+## Optional sample data
+
+```powershell
+cd "C:\Users\vishn\OneDrive\Desktop\job agent\job-dashboard"
 npm run seed
 ```
 
 The seed command replaces only the sample database collections with 60 realistic fake jobs,
 40 companies, 3 runs, and default tracking records. It never uses real job data.
 
-## Run
-
-Start both the API and Vite client:
-
-```powershell
-npm run dev
-```
-
-Open <http://localhost:5173>. The page should show the API health status.
-
-The API health endpoint is <http://127.0.0.1:4000/api/health>.
-
-## Phase M1 usage
-
-After seeding, start the apps:
-
-```powershell
-npm run dev
-```
+## Dashboard features
 
 The Jobs page supports:
 
@@ -88,33 +106,8 @@ GET   /api/jobs/:id
 PATCH /api/tracker/:jobId
 ```
 
-## Import the real scans
-
-The sample data is only for development. To remove it and import the real JavaScript scan:
-
-```powershell
-cd "C:\Users\vishn\OneDrive\Desktop\job agent\job-dashboard\server"
-npm run import:real
-```
-
-This imports the PayU scan, the non-PayU scan, and the extracted
-`data\thejobcompany_jobs.jsonl` records from the agent workspace. It intentionally removes
-the seeded sample collections before importing, so the dashboard cannot mix fake and real
-records. The Job Company records retain their third-party source label and evidence; they
-are not presented as employer-verified listings.
-
-Each imported job also includes a company LinkedIn page link for optional referral
-research. The dashboard only opens LinkedIn; it does not search for people, send
-messages, request referrals, or submit applications.
-
 Example:
 
 ```powershell
 Invoke-RestMethod "http://127.0.0.1:4000/api/jobs?type=intern&pageSize=12"
 ```
-
-## M0 scope
-
-M0 provides project setup, database models, sample data, the health endpoint, and the basic
-client shell. Jobs pages, importing, tracking views, and charts are intentionally reserved for
-later phases.

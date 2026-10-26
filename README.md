@@ -11,7 +11,15 @@ The dashboard does not scrape websites. It imports the agent outputs from `data/
 
 ## Run the cleaner
 
+Install the Python dependency first:
+
 ```powershell
+cd "C:\Users\vishn\OneDrive\Desktop\job agent"
+python -m pip install -r requirements.txt
+```
+
+```powershell
+cd "C:\Users\vishn\OneDrive\Desktop\job agent"
 python src\phase0_clean.py `
   --input All_Companies_Career_Pages.xlsx `
   --output data\companies_clean.csv `
@@ -21,7 +29,7 @@ python src\phase0_clean.py `
 ## Run the agent
 
 The default run respects robots.txt and stops safely when robots.txt is unavailable.
-Run one batch first:
+Run one batch first from the project directory:
 
 ```powershell
 python src\main.py `
@@ -52,6 +60,43 @@ python src\main.py ... --allow-robots-unavailable
 
 This still obeys explicit disallow rules in a readable robots.txt. It does not bypass
 forbidden third-party sources.
+
+## Run the JavaScript scanner
+
+The JavaScript scanner is useful for approved career pages that require rendered
+JavaScript. Install the dashboard workspace dependencies and Chromium once:
+
+```powershell
+cd "C:\Users\vishn\OneDrive\Desktop\job agent"
+npm install --prefix job-dashboard
+npx --prefix job-dashboard playwright install chromium
+```
+
+Run the priority-company scan:
+
+```powershell
+node js_fetch\scan.mjs
+```
+
+For selected browser-rendered sites, explicitly provide the approved company names:
+
+```powershell
+node js_fetch\scan.mjs --browser --browser-sites "Groww,Meesho"
+```
+
+The scanner writes JSONL records and per-company reports under `data\`.
+
+### Resolve The Job Company application URLs
+
+This follows the two-step Apply Now flow on each extracted detail page. It waits five
+seconds on the intermediate page and records only a reliable external destination.
+It never fills or submits an application:
+
+```powershell
+node js_fetch\resolve_apply_urls.mjs
+```
+
+The resolved links are saved in `data\thejobcompany_jobs.jsonl` as `apply_url`.
 
 ## Optional browser fallback
 
