@@ -17,6 +17,27 @@ const otherReportPath = resolve(agentRoot, "data", "js_scan_other_report.json");
 const theJobCompanyJobsPath = resolve(agentRoot, "data", "thejobcompany_jobs.jsonl");
 const companiesPath = resolve(agentRoot, "js_fetch", "priority_companies.json");
 
+const companyLinkedInUrls = {
+  PayU: "https://www.linkedin.com/company/payu/",
+  Atlan: "https://www.linkedin.com/company/atlan/",
+  Nasdaq: "https://www.linkedin.com/company/nasdaq/",
+  "Electronic Arts": "https://www.linkedin.com/company/electronic-arts/",
+  "Vara 5": "https://www.linkedin.com/company/vara5/",
+  Microsoft: "https://www.linkedin.com/company/microsoft/",
+  MongoDB: "https://www.linkedin.com/company/mongodb/",
+  YesMadam: "https://www.linkedin.com/company/yesmadam/",
+  CloudSEK: "https://www.linkedin.com/company/cloudsek/",
+  "IBM Research India": "https://www.linkedin.com/company/ibm-research/",
+  Kulfi: "https://www.linkedin.com/company/kulfi/",
+  Sutherland: "https://www.linkedin.com/company/sutherland-global/",
+  MHTECHIN: "https://www.linkedin.com/company/mhtechin/",
+  Graviton: "https://www.linkedin.com/company/graviton-research-capital/",
+  Cisco: "https://www.linkedin.com/company/cisco/",
+  Infosys: "https://www.linkedin.com/company/infosys/",
+  Equifax: "https://www.linkedin.com/company/equifax/",
+  Onsurity: "https://www.linkedin.com/company/onsurity/",
+};
+
 function parseJsonLines(text) {
   return text.split(/\r?\n/).filter(Boolean).map((line, index) => {
     try {
@@ -31,6 +52,7 @@ function mapJob(raw) {
   return {
     id: raw.id,
     company: raw.company,
+    companyLinkedInUrl: companyLinkedInUrls[raw.company] || null,
     title: raw.title,
     url: raw.url,
     applyUrl: raw.apply_url || null,

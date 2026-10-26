@@ -103,6 +103,10 @@ the seeded sample collections before importing, so the dashboard cannot mix fake
 records. The Job Company records retain their third-party source label and evidence; they
 are not presented as employer-verified listings.
 
+Each imported job also includes a company LinkedIn page link for optional referral
+research. The dashboard only opens LinkedIn; it does not search for people, send
+messages, request referrals, or submit applications.
+
 Example:
 
 ```powershell

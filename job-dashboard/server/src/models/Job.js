@@ -23,6 +23,7 @@ const jobSchema = new mongoose.Schema(
   {
     id: { type: String, required: true, unique: true, index: true },
     company: { type: String, required: true, index: true },
+    companyLinkedInUrl: { type: String, default: null },
     title: { type: String, required: true },
     url: { type: String, required: true },
     applyUrl: { type: String, default: null },

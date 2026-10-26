@@ -45,6 +45,7 @@ function JobCard({ job, onSelect, onStatusChange }) {
       <div className="card-actions">
         <a href={job.applyUrl || job.url} target="_blank" rel="noopener noreferrer">{job.applyUrl ? "Apply on employer site" : "Open listing page"}</a>
         {job.applyUrl && <a href={job.url} target="_blank" rel="noopener noreferrer">View listing source</a>}
+        {job.companyLinkedInUrl && <a href={job.companyLinkedInUrl} target="_blank" rel="noopener noreferrer">Find employees on LinkedIn</a>}
         <select value={job.tracking?.status || "new"} onChange={(event) => onStatusChange(job.id, event.target.value)} aria-label={`Status for ${job.title}`}>
           {statuses.map((status) => <option key={status} value={status}>{status}</option>)}
         </select>
@@ -83,6 +84,7 @@ function JobDetail({ job, onBack, onStatusChange }) {
       <div className="detail-actions">
         <a className="primary-link" href={job.applyUrl || job.url} target="_blank" rel="noopener noreferrer">{job.applyUrl ? "Apply on employer site" : "Open listing page"}</a>
         {job.applyUrl && <a href={job.url} target="_blank" rel="noopener noreferrer">View listing source</a>}
+        {job.companyLinkedInUrl && <a href={job.companyLinkedInUrl} target="_blank" rel="noopener noreferrer">Find employees on LinkedIn</a>}
         <label>Status <select value={job.tracking?.status || "new"} onChange={(event) => onStatusChange(job.id, event.target.value)}>{statuses.map((status) => <option key={status} value={status}>{status}</option>)}</select></label>
       </div>
     </section>
