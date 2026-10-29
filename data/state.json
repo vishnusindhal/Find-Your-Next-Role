@@ -1,102 +1,102 @@
-﻿{
-    "done":  {
-                 "batch_01":  {
-                                  "jobs":  0
-                              }
-             },
-    "failed":  {
-                   "batch_01":  {
-                                    "attempts":  2,
-                                    "companies":  [
-                                                      {
-                                                          "company":  "Bounce",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Divvy Homes",
-                                                          "reason":  "HTTP Error 404: Not Found"
-                                                      },
-                                                      {
-                                                          "company":  "CasaOne",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "ION Energy",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Micron",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "MPL",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Groww",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "PeopleStrong",
-                                                          "reason":  "HTTP Error 404: Not Found"
-                                                      },
-                                                      {
-                                                          "company":  "[24]7.ai",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Acaira",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Accord software",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Accolite software",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Ajio",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Akamai",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Airbase",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Alstom",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "AppInventiv",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Arcesium",
-                                                          "reason":  "HTTP Error 429: Too Many Requests"
-                                                      },
-                                                      {
-                                                          "company":  "Atlan",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Ardentisys",
-                                                          "reason":  "HTTP Error 404: Not Found"
-                                                      },
-                                                      {
-                                                          "company":  "Bain \u0026 Co",
-                                                          "reason":  "blocked by robots.txt or robots.txt unavailable"
-                                                      },
-                                                      {
-                                                          "company":  "Aujas",
-                                                          "reason":  "HTTP Error 404: Not Found"
-                                                      }
-                                                  ]
-                                }
-               }
+{
+  "done": {
+    "batch_01": {
+      "jobs": 0
+    }
+  },
+  "failed": {
+    "batch_01": {
+      "attempts": 1,
+      "companies": [
+        {
+          "company": "Bounce",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Divvy Homes",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "company": "ION Energy",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Micron",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "MPL",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "CasaOne",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Groww",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "PeopleStrong",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "company": "[24]7.ai",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Acaira",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Accord software",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Airbase",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Accolite software",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Ajio",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Akamai",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Alstom",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "AppInventiv",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Atlan",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Bain & Co",
+          "reason": "blocked by robots.txt or robots.txt unavailable"
+        },
+        {
+          "company": "Arcesium",
+          "reason": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "company": "Ardentisys",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "company": "Aujas",
+          "reason": "HTTP Error 404: Not Found"
+        }
+      ]
+    }
+  }
 }
